@@ -54,3 +54,14 @@ function reverseArrayInPlace(arr){
 
 reverseArrayInPlace([1, 2, 3, 7, 8, 9]);
 
+// variant for
+function reverseArrayInPlace(arr){
+	var arrHelper = new Array;
+
+	for(i = arr.length; i > 0; i--, arrHelper.push(arr[i]));
+	arr = arrHelper;
+
+	return arr;
+}
+
+reverseArrayInPlace([1, 2, 3, 7, 8, 9]);
