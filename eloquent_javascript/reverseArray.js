@@ -27,10 +27,30 @@ function reverseArrayInPlace(arr){
 	}
 
 	for(i = 0; i <= arrHelper.length-1; i++){
+		// variant one
 		// arr.splice(i, 1, (arrHelper[i]));
+
+		// variant two
 		arr[i] = arrHelper[i];
 	}
 	return arr;
 }
 
 reverseArrayInPlace([1, 2, 3, 7, 8, 9]);
+
+// variant three
+function reverseArrayInPlace(arr){
+	var arrHelper = new Array;
+
+	for(i = arr.length-1; i >= 0; i--){
+		arrHelper.push(arr[i]);
+	}
+
+	arr.length = 0;
+	arr = arrHelper;
+
+	return arr;
+}
+
+reverseArrayInPlace([1, 2, 3, 7, 8, 9]);
+
