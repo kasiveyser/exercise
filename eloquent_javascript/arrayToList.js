@@ -103,3 +103,12 @@ function listToArray(list){
 		}
 		return arr;
 }
+
+// v.2
+function listToArray(list){
+	var arr = [];
+		for(	;list !== null; list = list.rest){
+			arr.push(list.value);
+		}
+	return arr;
+}
