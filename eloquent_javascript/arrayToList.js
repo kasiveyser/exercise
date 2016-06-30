@@ -125,7 +125,6 @@ function prepend(arg, listHelp){
 	//	 nth
 
 function nth(list, arg){
-	var elem;
-
-	return elem;
+	for(i = 1; i < arg; i++) list = list.rest;
+	return list.value;
 }
