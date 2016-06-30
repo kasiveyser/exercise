@@ -112,3 +112,20 @@ function listToArray(list){
 		}
 	return arr;
 }
+
+	//		prepend
+
+function prepend(arg, listHelp){
+	var list = {};
+	list.value = arg;
+	list.rest = listHelp;
+	return list;
+}
+
+	//	 nth
+
+function nth(list, arg){
+	var elem;
+
+	return elem;
+}
